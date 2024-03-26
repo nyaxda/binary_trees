@@ -1,5 +1,6 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
+#define max(a,b) ((a) > (b) ? (a) : (b))
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -39,4 +40,5 @@ size_t binary_tree_depth(const binary_tree_t *tree);
 size_t binary_tree_size(const binary_tree_t *tree);
 size_t binary_tree_leaves(const binary_tree_t *tree);
 size_t binary_tree_nodes(const binary_tree_t *tree);
+int binary_tree_balance(const binary_tree_t *tree);
 #endif 
